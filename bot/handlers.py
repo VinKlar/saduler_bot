@@ -15,6 +15,18 @@ SEARCH_PROMPT = (
     "Если знаете номер группы, введите его сразу, например: 8101"
 )
 
+WELCOME_TEXT = (
+    "Добро пожаловать в бот расписания Университета биотехнологий!\n\n"
+    "Бот поможет быстро узнать занятия на сегодня, завтра или выбранную дату. "
+    "Расписание учитывает вашу группу и подгруппу.\n\n"
+    "Как начать:\n"
+    "1. Введите направление обучения или номер группы.\n"
+    "2. Выберите профиль, группу и подгруппу.\n"
+    "3. Используйте кнопки «Сегодня», «Завтра» или «Выбрать дату».\n\n"
+    "Позже изменить направление, группу или подгруппу можно через кнопку «Меню».\n\n"
+    + SEARCH_PROMPT
+)
+
 
 def make_button_rows(items, text_factory, payload_factory, per_row=2):
     buttons = [
@@ -184,7 +196,7 @@ async def start_handler(event, context):
     user_key = str(event.user_id)
 
     if context["USERS"].get(user_key) is None:
-        await begin_group_selection(event, context)
+        await begin_group_selection(event, context, WELCOME_TEXT)
         return
 
     await send_message(
@@ -211,7 +223,7 @@ async def start_handler(event, context):
     user_key = str(event.user_id)
 
     if context["USERS"].get(user_key) is None:
-        await begin_group_selection(event, context)
+        await begin_group_selection(event, context, WELCOME_TEXT)
         return
 
     await send_message(

@@ -31,8 +31,9 @@ class Event:
 
         elif self.update_type == "bot_started":
             self.type = "bot_started"
-            self.user_id = self.update["user_id"]
-            self.chat_id = self.update["chat_id"]
+            user = self.update.get("user", {})
+            self.user_id = user.get("user_id", self.update.get("user_id"))
+            self.chat_id = self.update.get("chat_id")
 
 
 class Router:

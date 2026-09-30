@@ -24,6 +24,19 @@ def callback_update(payload, user_id=1, chat_id=10):
     }
 
 
+def bot_started_update(user_id=1, chat_id=10):
+    return {
+        "update_type": "bot_started",
+        "timestamp": 0,
+        "chat_id": chat_id,
+        "user": {
+            "user_id": user_id,
+            "name": "Новый пользователь",
+        },
+        "payload": None,
+    }
+
+
 class GroupCatalogTests(unittest.TestCase):
     def test_direct_group_search_ignores_spaces_case_and_final_dot(self):
         group = GROUP_CATALOG.find_group(" 1122 Э. ")
@@ -48,6 +61,23 @@ class RegistrationFlowTests(unittest.IsolatedAsyncioTestCase):
 
     def save_users(self, users):
         self.saved_users = dict(users)
+
+    async def test_system_start_button_opens_registration(self):
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(bot_started_update(), self.context)
+
+        self.assertEqual(self.context["USER_STATE"][1], "WAIT_SEARCH")
+        sender.assert_awaited_once()
+        self.assertIn(
+            "Введите код и наименование направления",
+            sender.await_args.kwargs["text"],
+        )
+        self.assertIn(
+            "Добро пожаловать в бот расписания",
+            sender.await_args.kwargs["text"],
+        )
 
     async def test_user_can_enter_group_immediately(self):
         with patch("bot.handlers.send_message", new=AsyncMock()):
