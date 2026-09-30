@@ -1,0 +1,1955 @@
+{
+  "35.03.04 Агрономия": {
+    "text": "35.03.04 Агрономия",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1101",
+          "payload": "1101"
+        },
+        {
+          "type": "callback",
+          "text": "1102",
+          "payload": "1102"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1105",
+          "payload": "1105"
+        },
+        {
+          "type": "callback",
+          "text": "1131",
+          "payload": "1131"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1134",
+          "payload": "1134"
+        },
+        {
+          "type": "callback",
+          "text": "1201",
+          "payload": "1201"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1202",
+          "payload": "1202"
+        },
+        {
+          "type": "callback",
+          "text": "1231",
+          "payload": "1231"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1301",
+          "payload": "1301"
+        },
+        {
+          "type": "callback",
+          "text": "1304",
+          "payload": "1304"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1305",
+          "payload": "1305"
+        },
+        {
+          "type": "callback",
+          "text": "1331",
+          "payload": "1331"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1402",
+          "payload": "1402"
+        },
+        {
+          "type": "callback",
+          "text": "1404",
+          "payload": "1404"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1405",
+          "payload": "1405"
+        },
+        {
+          "type": "callback",
+          "text": "1407",
+          "payload": "1407"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1431",
+          "payload": "1431"
+        },
+        {
+          "type": "callback",
+          "text": "1531",
+          "payload": "1531"
+        }
+      ]
+    ]
+  },
+  "35.03.01 Лесное дело": {
+    "text": "35.03.01 Лесное дело",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1108",
+          "payload": "1108"
+        },
+        {
+          "type": "callback",
+          "text": "1132",
+          "payload": "1132"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1208",
+          "payload": "1208"
+        },
+        {
+          "type": "callback",
+          "text": "1232",
+          "payload": "1232"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1308",
+          "payload": "1308"
+        },
+        {
+          "type": "callback",
+          "text": "1332",
+          "payload": "1332"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1408",
+          "payload": "1408"
+        },
+        {
+          "type": "callback",
+          "text": "1432",
+          "payload": "1432"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1532",
+          "payload": "1532"
+        }
+      ]
+    ]
+  },
+  "35.03.10 Ландшафтная архитектура": {
+    "text": "35.03.10 Ландшафтная архитектура",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1110",
+          "payload": "1110"
+        },
+        {
+          "type": "callback",
+          "text": "1135",
+          "payload": "1135"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1210",
+          "payload": "1210"
+        },
+        {
+          "type": "callback",
+          "text": "1235",
+          "payload": "1235"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1310",
+          "payload": "1310"
+        },
+        {
+          "type": "callback",
+          "text": "1335",
+          "payload": "1335"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1410",
+          "payload": "1410"
+        },
+        {
+          "type": "callback",
+          "text": "1435",
+          "payload": "1435"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1535",
+          "payload": "1535"
+        }
+      ]
+    ]
+  },
+  "35.04.04 Агрономия": {
+    "text": "35.04.04 Агрономия",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1141",
+          "payload": "1141"
+        },
+        {
+          "type": "callback",
+          "text": "1241",
+          "payload": "1241"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1121 з",
+          "payload": "1121 з"
+        },
+        {
+          "type": "callback",
+          "text": "1121 р",
+          "payload": "1121 р"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1121 с",
+          "payload": "1121 с"
+        },
+        {
+          "type": "callback",
+          "text": "1221 з",
+          "payload": "1221 з"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "1221 р",
+          "payload": "1221 р"
+        },
+        {
+          "type": "callback",
+          "text": "1221 с",
+          "payload": "1221 с"
+        }
+      ]
+    ]
+  },
+  "35.03.06 Агроинженерия": {
+    "text": "35.03.06 Агроинженерия",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3101",
+          "payload": "3101"
+        },
+        {
+          "type": "callback",
+          "text": "3105",
+          "payload": "3105"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3107",
+          "payload": "3107"
+        },
+        {
+          "type": "callback",
+          "text": "3109",
+          "payload": "3109"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3110",
+          "payload": "3110"
+        },
+        {
+          "type": "callback",
+          "text": "3131",
+          "payload": "3131"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3136",
+          "payload": "3136"
+        },
+        {
+          "type": "callback",
+          "text": "3137",
+          "payload": "3137"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3140",
+          "payload": "3140"
+        },
+        {
+          "type": "callback",
+          "text": "3201",
+          "payload": "3201"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3205",
+          "payload": "3205"
+        },
+        {
+          "type": "callback",
+          "text": "3207",
+          "payload": "3207"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3209",
+          "payload": "3209"
+        },
+        {
+          "type": "callback",
+          "text": "3231",
+          "payload": "3231"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3232",
+          "payload": "3232"
+        },
+        {
+          "type": "callback",
+          "text": "3236",
+          "payload": "3236"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3237",
+          "payload": "3237"
+        },
+        {
+          "type": "callback",
+          "text": "3240",
+          "payload": "3240"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3241",
+          "payload": "3241"
+        },
+        {
+          "type": "callback",
+          "text": "3301",
+          "payload": "3301"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3305",
+          "payload": "3305"
+        },
+        {
+          "type": "callback",
+          "text": "3307",
+          "payload": "3307"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3331",
+          "payload": "3331"
+        },
+        {
+          "type": "callback",
+          "text": "3332",
+          "payload": "3332"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3336",
+          "payload": "3336"
+        },
+        {
+          "type": "callback",
+          "text": "3337",
+          "payload": "3337"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3340",
+          "payload": "3340"
+        },
+        {
+          "type": "callback",
+          "text": "3341",
+          "payload": "3341"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3401",
+          "payload": "3401"
+        },
+        {
+          "type": "callback",
+          "text": "3405",
+          "payload": "3405"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3407",
+          "payload": "3407"
+        },
+        {
+          "type": "callback",
+          "text": "3409",
+          "payload": "3409"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3431",
+          "payload": "3431"
+        },
+        {
+          "type": "callback",
+          "text": "3432",
+          "payload": "3432"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3436",
+          "payload": "3436"
+        },
+        {
+          "type": "callback",
+          "text": "3437",
+          "payload": "3437"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3440",
+          "payload": "3440"
+        },
+        {
+          "type": "callback",
+          "text": "3531",
+          "payload": "3531"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3536",
+          "payload": "3536"
+        },
+        {
+          "type": "callback",
+          "text": "3537",
+          "payload": "3537"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3540",
+          "payload": "3540"
+        }
+      ]
+    ]
+  },
+  "44.03.04 Профессиональное обучение (по отраслям)": {
+    "text": "44.03.04 Профессиональное обучение (по отраслям)",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3106",
+          "payload": "3106"
+        },
+        {
+          "type": "callback",
+          "text": "3206",
+          "payload": "3206"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3306",
+          "payload": "3306"
+        },
+        {
+          "type": "callback",
+          "text": "3406",
+          "payload": "3406"
+        }
+      ]
+    ]
+  },
+  "23.03.04 Эксплуатация транспортно-технологических машин и комплексов": {
+    "text": "23.03.04 Эксплуатация транспортно-технологических машин и комплексов",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3111",
+          "payload": "3111"
+        },
+        {
+          "type": "callback",
+          "text": "3112",
+          "payload": "3112"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3123",
+          "payload": "3123"
+        },
+        {
+          "type": "callback",
+          "text": "3146",
+          "payload": "3146"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3147",
+          "payload": "3147"
+        },
+        {
+          "type": "callback",
+          "text": "3211",
+          "payload": "3211"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3212",
+          "payload": "3212"
+        },
+        {
+          "type": "callback",
+          "text": "3223",
+          "payload": "3223"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3246",
+          "payload": "3246"
+        },
+        {
+          "type": "callback",
+          "text": "3247",
+          "payload": "3247"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3311",
+          "payload": "3311"
+        },
+        {
+          "type": "callback",
+          "text": "3328",
+          "payload": "3328"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3346",
+          "payload": "3346"
+        },
+        {
+          "type": "callback",
+          "text": "3347",
+          "payload": "3347"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3411",
+          "payload": "3411"
+        },
+        {
+          "type": "callback",
+          "text": "3446",
+          "payload": "3446"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3447",
+          "payload": "3447"
+        },
+        {
+          "type": "callback",
+          "text": "3546",
+          "payload": "3546"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3548",
+          "payload": "3548"
+        }
+      ]
+    ]
+  },
+  "35.04.06 Агроинженерия": {
+    "text": "35.04.06 Агроинженерия",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3121",
+          "payload": "3121"
+        },
+        {
+          "type": "callback",
+          "text": "3127",
+          "payload": "3127"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3221",
+          "payload": "3221"
+        },
+        {
+          "type": "callback",
+          "text": "3222",
+          "payload": "3222"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "3227",
+          "payload": "3227"
+        },
+        {
+          "type": "callback",
+          "text": "3327",
+          "payload": "3327"
+        }
+      ]
+    ]
+  },
+  "44.04.04 Профессиональное обучение (по отраслям)": {
+    "text": "44.04.04 Профессиональное обучение (по отраслям)",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3226",
+          "payload": "3226"
+        }
+      ]
+    ]
+  },
+  "23.03.01 Технология транспортных процессов": {
+    "text": "23.03.01 Технология транспортных процессов",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "3414",
+          "payload": "3414"
+        }
+      ]
+    ]
+  },
+  "38.03.01  Экономика": {
+    "text": "38.03.01  Экономика",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4101",
+          "payload": "4101"
+        },
+        {
+          "type": "callback",
+          "text": "4102",
+          "payload": "4102"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4151",
+          "payload": "4151"
+        },
+        {
+          "type": "callback",
+          "text": "4201",
+          "payload": "4201"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4301",
+          "payload": "4301"
+        },
+        {
+          "type": "callback",
+          "text": "4351",
+          "payload": "4351"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4401",
+          "payload": "4401"
+        },
+        {
+          "type": "callback",
+          "text": "4451",
+          "payload": "4451"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4551",
+          "payload": "4551"
+        }
+      ]
+    ]
+  },
+  "38.03.02 Менеджмент": {
+    "text": "38.03.02 Менеджмент",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4104",
+          "payload": "4104"
+        },
+        {
+          "type": "callback",
+          "text": "4105",
+          "payload": "4105"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4154",
+          "payload": "4154"
+        },
+        {
+          "type": "callback",
+          "text": "4204",
+          "payload": "4204"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4254",
+          "payload": "4254"
+        },
+        {
+          "type": "callback",
+          "text": "4304",
+          "payload": "4304"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4354",
+          "payload": "4354"
+        },
+        {
+          "type": "callback",
+          "text": "4404",
+          "payload": "4404"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4405",
+          "payload": "4405"
+        },
+        {
+          "type": "callback",
+          "text": "4454",
+          "payload": "4454"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4455",
+          "payload": "4455"
+        },
+        {
+          "type": "callback",
+          "text": "4554",
+          "payload": "4554"
+        }
+      ]
+    ]
+  },
+  "38.03.04 Государственное и муниципальное управление": {
+    "text": "38.03.04 Государственное и муниципальное управление",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4106",
+          "payload": "4106"
+        },
+        {
+          "type": "callback",
+          "text": "4107",
+          "payload": "4107"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4156",
+          "payload": "4156"
+        },
+        {
+          "type": "callback",
+          "text": "4206",
+          "payload": "4206"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4256",
+          "payload": "4256"
+        },
+        {
+          "type": "callback",
+          "text": "4306",
+          "payload": "4306"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4356",
+          "payload": "4356"
+        },
+        {
+          "type": "callback",
+          "text": "4406",
+          "payload": "4406"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4456",
+          "payload": "4456"
+        },
+        {
+          "type": "callback",
+          "text": "4556",
+          "payload": "4556"
+        }
+      ]
+    ]
+  },
+  "19.03.03 Продукты питания животного происхождения": {
+    "text": "19.03.03 Продукты питания животного происхождения",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4109",
+          "payload": "4109"
+        },
+        {
+          "type": "callback",
+          "text": "4209",
+          "payload": "4209"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4309",
+          "payload": "4309"
+        },
+        {
+          "type": "callback",
+          "text": "4409",
+          "payload": "4409"
+        }
+      ]
+    ]
+  },
+  "2004-03-19 00:00:00 Технология продукции и организация общественного питания": {
+    "text": "2004-03-19 00:00:00 Технология продукции и организация общественного питания",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4111",
+          "payload": "4111"
+        },
+        {
+          "type": "callback",
+          "text": "4141",
+          "payload": "4141"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4211",
+          "payload": "4211"
+        },
+        {
+          "type": "callback",
+          "text": "4241",
+          "payload": "4241"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4311",
+          "payload": "4311"
+        },
+        {
+          "type": "callback",
+          "text": "4341",
+          "payload": "4341"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4411",
+          "payload": "4411"
+        },
+        {
+          "type": "callback",
+          "text": "4441",
+          "payload": "4441"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4541",
+          "payload": "4541"
+        }
+      ]
+    ]
+  },
+  "35.03.07 Технология производства и переработки сельскохозяйственной продукции": {
+    "text": "35.03.07 Технология производства и переработки сельскохозяйственной продукции",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4114",
+          "payload": "4114"
+        },
+        {
+          "type": "callback",
+          "text": "4143",
+          "payload": "4143"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4213",
+          "payload": "4213"
+        },
+        {
+          "type": "callback",
+          "text": "4243",
+          "payload": "4243"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4313",
+          "payload": "4313"
+        },
+        {
+          "type": "callback",
+          "text": "4343",
+          "payload": "4343"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4413",
+          "payload": "4413"
+        },
+        {
+          "type": "callback",
+          "text": "4414",
+          "payload": "4414"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4443",
+          "payload": "4443"
+        },
+        {
+          "type": "callback",
+          "text": "4543",
+          "payload": "4543"
+        }
+      ]
+    ]
+  },
+  "38.04.01 Экономика": {
+    "text": "38.04.01 Экономика",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4121",
+          "payload": "4121"
+        },
+        {
+          "type": "callback",
+          "text": "4131",
+          "payload": "4131"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4221",
+          "payload": "4221"
+        },
+        {
+          "type": "callback",
+          "text": "4231",
+          "payload": "4231"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4322",
+          "payload": "4322"
+        },
+        {
+          "type": "callback",
+          "text": "4221 Каз.",
+          "payload": "4221 Каз."
+        }
+      ]
+    ]
+  },
+  "38.04.02 Менеджмент": {
+    "text": "38.04.02 Менеджмент",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4122",
+          "payload": "4122"
+        },
+        {
+          "type": "callback",
+          "text": "4134",
+          "payload": "4134"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4222",
+          "payload": "4222"
+        },
+        {
+          "type": "callback",
+          "text": "4234",
+          "payload": "4234"
+        }
+      ]
+    ]
+  },
+  "19.04.03 Продукты питания животного происхождения": {
+    "text": "19.04.03 Продукты питания животного происхождения",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4124",
+          "payload": "4124"
+        },
+        {
+          "type": "callback",
+          "text": "4224",
+          "payload": "4224"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4238",
+          "payload": "4238"
+        },
+        {
+          "type": "callback",
+          "text": "4338",
+          "payload": "4338"
+        }
+      ]
+    ]
+  },
+  "38.04.04 Государственное и муниципальное управление": {
+    "text": "38.04.04 Государственное и муниципальное управление",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4136",
+          "payload": "4136"
+        },
+        {
+          "type": "callback",
+          "text": "4223",
+          "payload": "4223"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "4236",
+          "payload": "4236"
+        },
+        {
+          "type": "callback",
+          "text": "4336",
+          "payload": "4336"
+        }
+      ]
+    ]
+  },
+  "19.03.02 Продукты питания из растительного сырья": {
+    "text": "19.03.02 Продукты питания из растительного сырья",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4208",
+          "payload": "4208"
+        }
+      ]
+    ]
+  },
+  "38.03.05 Бизнес-информатика": {
+    "text": "38.03.05 Бизнес-информатика",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "4251",
+          "payload": "4251"
+        },
+        {
+          "type": "callback",
+          "text": "4302",
+          "payload": "4302"
+        }
+      ]
+    ]
+  },
+  "36.05.01 Ветеринария": {
+    "text": "36.05.01 Ветеринария",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6101",
+          "payload": "6101"
+        },
+        {
+          "type": "callback",
+          "text": "6102",
+          "payload": "6102"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6103",
+          "payload": "6103"
+        },
+        {
+          "type": "callback",
+          "text": "6104",
+          "payload": "6104"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6105",
+          "payload": "6105"
+        },
+        {
+          "type": "callback",
+          "text": "6106",
+          "payload": "6106"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6141",
+          "payload": "6141"
+        },
+        {
+          "type": "callback",
+          "text": "6142",
+          "payload": "6142"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6201",
+          "payload": "6201"
+        },
+        {
+          "type": "callback",
+          "text": "6203",
+          "payload": "6203"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6204",
+          "payload": "6204"
+        },
+        {
+          "type": "callback",
+          "text": "6241",
+          "payload": "6241"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6242",
+          "payload": "6242"
+        },
+        {
+          "type": "callback",
+          "text": "6301",
+          "payload": "6301"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6302",
+          "payload": "6302"
+        },
+        {
+          "type": "callback",
+          "text": "6303",
+          "payload": "6303"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6304",
+          "payload": "6304"
+        },
+        {
+          "type": "callback",
+          "text": "6305",
+          "payload": "6305"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6341",
+          "payload": "6341"
+        },
+        {
+          "type": "callback",
+          "text": "6342",
+          "payload": "6342"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6401",
+          "payload": "6401"
+        },
+        {
+          "type": "callback",
+          "text": "6402",
+          "payload": "6402"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6403",
+          "payload": "6403"
+        },
+        {
+          "type": "callback",
+          "text": "6405",
+          "payload": "6405"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6441",
+          "payload": "6441"
+        },
+        {
+          "type": "callback",
+          "text": "6442",
+          "payload": "6442"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6501",
+          "payload": "6501"
+        },
+        {
+          "type": "callback",
+          "text": "6502",
+          "payload": "6502"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6503",
+          "payload": "6503"
+        },
+        {
+          "type": "callback",
+          "text": "6504",
+          "payload": "6504"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6541",
+          "payload": "6541"
+        },
+        {
+          "type": "callback",
+          "text": "6542",
+          "payload": "6542"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6641",
+          "payload": "6641"
+        },
+        {
+          "type": "callback",
+          "text": "6642",
+          "payload": "6642"
+        }
+      ]
+    ]
+  },
+  "36.03.01 Ветеринарно-санитарная экспертиза": {
+    "text": "36.03.01 Ветеринарно-санитарная экспертиза",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6108",
+          "payload": "6108"
+        },
+        {
+          "type": "callback",
+          "text": "6131",
+          "payload": "6131"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6208",
+          "payload": "6208"
+        },
+        {
+          "type": "callback",
+          "text": "6231",
+          "payload": "6231"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6307",
+          "payload": "6307"
+        },
+        {
+          "type": "callback",
+          "text": "6331",
+          "payload": "6331"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6407",
+          "payload": "6407"
+        },
+        {
+          "type": "callback",
+          "text": "6431",
+          "payload": "6431"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6531",
+          "payload": "6531"
+        }
+      ]
+    ]
+  },
+  "36.03.02 Зоотехния": {
+    "text": "36.03.02 Зоотехния",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6109",
+          "payload": "6109"
+        },
+        {
+          "type": "callback",
+          "text": "6132",
+          "payload": "6132"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6209",
+          "payload": "6209"
+        },
+        {
+          "type": "callback",
+          "text": "6232",
+          "payload": "6232"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6309",
+          "payload": "6309"
+        },
+        {
+          "type": "callback",
+          "text": "6332",
+          "payload": "6332"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6409",
+          "payload": "6409"
+        },
+        {
+          "type": "callback",
+          "text": "6432",
+          "payload": "6432"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6532",
+          "payload": "6532"
+        }
+      ]
+    ]
+  },
+  "19.03.01 Биотехнология": {
+    "text": "19.03.01 Биотехнология",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6113",
+          "payload": "6113"
+        }
+      ]
+    ]
+  },
+  "06.03.01 Биология": {
+    "text": "06.03.01 Биология",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6116",
+          "payload": "6116"
+        },
+        {
+          "type": "callback",
+          "text": "6215",
+          "payload": "6215"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6315",
+          "payload": "6315"
+        },
+        {
+          "type": "callback",
+          "text": "6415",
+          "payload": "6415"
+        }
+      ]
+    ]
+  },
+  "36.04.01 Ветеринарно-санитарная экспертиза": {
+    "text": "36.04.01 Ветеринарно-санитарная экспертиза",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6121",
+          "payload": "6121"
+        },
+        {
+          "type": "callback",
+          "text": "6221",
+          "payload": "6221"
+        }
+      ]
+    ]
+  },
+  "36.04.02 Зоотехния": {
+    "text": "36.04.02 Зоотехния",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6122",
+          "payload": "6122"
+        },
+        {
+          "type": "callback",
+          "text": "6222",
+          "payload": "6222"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "8124",
+          "payload": "8124"
+        },
+        {
+          "type": "callback",
+          "text": "8224",
+          "payload": "8224"
+        }
+      ]
+    ]
+  },
+  "19.04.01 Биотехнология": {
+    "text": "19.04.01 Биотехнология",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6125",
+          "payload": "6125"
+        },
+        {
+          "type": "callback",
+          "text": "6156",
+          "payload": "6156"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6225",
+          "payload": "6225"
+        },
+        {
+          "type": "callback",
+          "text": "6256",
+          "payload": "6256"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6356",
+          "payload": "6356"
+        }
+      ]
+    ]
+  },
+  "35.04.07 Водные биоресурсы и аквакультура": {
+    "text": "35.04.07 Водные биоресурсы и аквакультура",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6126",
+          "payload": "6126"
+        },
+        {
+          "type": "callback",
+          "text": "6226",
+          "payload": "6226"
+        }
+      ]
+    ]
+  },
+  "06.04.01 Биология": {
+    "text": "06.04.01 Биология",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "6127",
+          "payload": "6127"
+        },
+        {
+          "type": "callback",
+          "text": "6128",
+          "payload": "6128"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "6227",
+          "payload": "6227"
+        }
+      ]
+    ]
+  },
+  "40.03.01 Юриспруденция": {
+    "text": "40.03.01 Юриспруденция",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "7101",
+          "payload": "7101"
+        },
+        {
+          "type": "callback",
+          "text": "7102",
+          "payload": "7102"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7111",
+          "payload": "7111"
+        },
+        {
+          "type": "callback",
+          "text": "7141",
+          "payload": "7141"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7201",
+          "payload": "7201"
+        },
+        {
+          "type": "callback",
+          "text": "7211",
+          "payload": "7211"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7212",
+          "payload": "7212"
+        },
+        {
+          "type": "callback",
+          "text": "7241",
+          "payload": "7241"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7301",
+          "payload": "7301"
+        },
+        {
+          "type": "callback",
+          "text": "7311",
+          "payload": "7311"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7312",
+          "payload": "7312"
+        },
+        {
+          "type": "callback",
+          "text": "7341",
+          "payload": "7341"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7401",
+          "payload": "7401"
+        },
+        {
+          "type": "callback",
+          "text": "7402",
+          "payload": "7402"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7411",
+          "payload": "7411"
+        },
+        {
+          "type": "callback",
+          "text": "7412",
+          "payload": "7412"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "7441",
+          "payload": "7441"
+        },
+        {
+          "type": "callback",
+          "text": "7541",
+          "payload": "7541"
+        }
+      ]
+    ]
+  },
+  "40.04.01 Юриспруденция": {
+    "text": "40.04.01 Юриспруденция",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "7121",
+          "payload": "7121"
+        }
+      ]
+    ]
+  },
+  "09.03.03 Прикладная информатика": {
+    "text": "09.03.03 Прикладная информатика",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "8101",
+          "payload": "8101"
+        },
+        {
+          "type": "callback",
+          "text": "8102",
+          "payload": "8102"
+        }
+      ],
+      [
+        {
+          "type": "callback",
+          "text": "8201",
+          "payload": "8201"
+        },
+        {
+          "type": "callback",
+          "text": "8401",
+          "payload": "8401"
+        }
+      ]
+    ]
+  },
+  "35.04.03 Лесное дело": {
+    "text": "35.04.03 Лесное дело",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1122 л",
+          "payload": "1122 л"
+        }
+      ]
+    ]
+  },
+  "35.04.03 Агрохимия и агропочвоведение ": {
+    "text": "35.04.03 Агрохимия и агропочвоведение ",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1122 э",
+          "payload": "1122 э"
+        },
+        {
+          "type": "callback",
+          "text": "1223 э",
+          "payload": "1223 э"
+        }
+      ]
+    ]
+  },
+  "35.04.01 Лесное дело": {
+    "text": "35.04.01 Лесное дело",
+    "buttons": [
+      [
+        {
+          "type": "callback",
+          "text": "1222 л ",
+          "payload": "1222 л "
+        }
+      ]
+    ]
+  }
+}

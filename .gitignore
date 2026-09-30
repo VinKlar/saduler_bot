@@ -1,0 +1,14 @@
+/.env
+/.venv/
+
+__pycache__/
+*.py[cod]
+
+/users/users.json
+/cache/file_tokens.json
+
+/scheduler/jsons/
+/scheduler/МАХ-Профили_актуальные-25-26 у.г..xlsx
+/scheduler/МАХ-Профили_актуальные-26-27 у.г..xlsx
+
+~$*.xlsx
