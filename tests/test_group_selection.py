@@ -70,12 +70,23 @@ class RegistrationFlowTests(unittest.IsolatedAsyncioTestCase):
 
         self.assertEqual(self.context["USER_STATE"][1], "WAIT_SEARCH")
         sender.assert_awaited_once()
-        self.assertIn(
-            "Введите код и наименование направления",
-            sender.await_args.kwargs["text"],
-        )
+        self.assertEqual(sender.await_args.args[1], "selection")
         self.assertIn(
             "Добро пожаловать в бот расписания",
+            sender.await_args.kwargs["text"],
+        )
+
+    async def test_missing_user_is_sent_to_group_selection(self):
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(callback_update("today"), self.context)
+
+        self.assertEqual(self.context["USER_STATE"][1], "WAIT_SEARCH")
+        sender.assert_awaited_once()
+        self.assertEqual(sender.await_args.args[1], "selection")
+        self.assertIn(
+            "Не удалось найти сохранённую группу",
             sender.await_args.kwargs["text"],
         )
 

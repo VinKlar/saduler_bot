@@ -43,6 +43,7 @@ class Router:
         self.command_handlers = []
         self.state_handlers = []
         self.start_handlers = []
+        self.missing_user_handlers = []
 
     def message(self, text=None):
         def decorator(func):
@@ -91,6 +92,13 @@ class Router:
 
         return decorator
 
+    def missing_user(self):
+        def decorator(func):
+            self.missing_user_handlers.append(func)
+            return func
+
+        return decorator
+
     async def dispatch(self, update: dict, context: dict):
         event = Event(update)
 
@@ -98,6 +106,19 @@ class Router:
             return
 
         user_state = context["USER_STATE"].get(event.user_id)
+
+        is_start_message = event.type == "message" and event.text == "/start"
+        user_exists = context["USERS"].get(str(event.user_id)) is not None
+
+        if (
+            not user_exists
+            and not user_state
+            and event.type != "bot_started"
+            and not is_start_message
+        ):
+            for handler in self.missing_user_handlers:
+                await handler(event, context)
+            return
 
         if event.type == "callback" and event.payload == "cancel":
             for handler in self.callback_handlers:

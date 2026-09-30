@@ -201,7 +201,17 @@ async def start_handler(event, context):
 
     await send_message(
         event.chat_id,
-        "/start"
+        "bot_started"
+    )
+    await begin_group_selection(event, context)
+
+
+@router.missing_user()
+async def missing_user_handler(event, context):
+    await begin_group_selection(
+        event,
+        context,
+        "Не удалось найти сохранённую группу. Выберите её заново.\n\n" + SEARCH_PROMPT,
     )
     
 @router.command("re_group")
