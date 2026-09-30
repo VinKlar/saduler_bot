@@ -1,4 +1,5 @@
 import unittest
+import time
 from unittest.mock import AsyncMock, patch
 
 from bot.group_catalog import GROUP_CATALOG
@@ -56,6 +57,7 @@ class RegistrationFlowTests(unittest.IsolatedAsyncioTestCase):
             "USERS": {},
             "USER_STATE": {},
             "USER_SELECTION": {},
+            "USER_STATE_UPDATED": {},
             "save_users": self.save_users,
         }
 
@@ -115,6 +117,34 @@ class RegistrationFlowTests(unittest.IsolatedAsyncioTestCase):
 
         self.assertEqual(self.context["USER_STATE"][1], "WAIT_SEARCH")
         self.assertIn("Группа 9999 не найдена", sender.await_args.kwargs["text"])
+
+    async def test_state_expires_after_two_minutes(self):
+        self.context["USER_STATE"][1] = "WAIT_DATE"
+        self.context["USER_STATE_UPDATED"][1] = time.monotonic() - 121
+        self.context["USERS"]["1"] = {"group": "8101"}
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(message_update("01.10.2026"), self.context)
+
+        self.assertNotIn(1, self.context["USER_STATE"])
+        self.assertNotIn(1, self.context["USER_SELECTION"])
+        self.assertIn("Время ожидания истекло", sender.await_args.kwargs["text"])
+
+    async def test_restart_clears_state_even_while_waiting(self):
+        self.context["USER_STATE"][1] = "WAIT_DATE"
+        self.context["USER_SELECTION"][1] = {"temporary": True}
+        self.context["USER_STATE_UPDATED"][1] = time.monotonic()
+        self.context["USERS"]["1"] = {"group": "8101"}
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(message_update("/restart"), self.context)
+
+        self.assertNotIn(1, self.context["USER_STATE"])
+        self.assertNotIn(1, self.context["USER_SELECTION"])
+        self.assertNotIn(1, self.context["USER_STATE_UPDATED"])
+        self.assertEqual(sender.await_args.args[1], "/start")
 
     async def test_user_can_enter_group_immediately(self):
         with patch("bot.handlers.send_message", new=AsyncMock()):

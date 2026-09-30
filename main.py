@@ -19,6 +19,7 @@ USERS_PATH = "users/users.json"
 
 USER_STATE = {}
 USER_SELECTION = {}
+USER_STATE_UPDATED = {}
 
 if not TOKEN:
     raise ValueError("MAX_TOKEN не найден. Проверь файл .env")
@@ -73,6 +74,7 @@ async def handle_update(update: dict):
         "USERS": USERS,
         "USER_STATE": USER_STATE,
         "USER_SELECTION": USER_SELECTION,
+        "USER_STATE_UPDATED": USER_STATE_UPDATED,
         "save_users": save_users,
         "sched": sched,
         "FGS": FGS

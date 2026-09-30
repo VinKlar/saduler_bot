@@ -228,6 +228,36 @@ async def missing_user_handler(event, context):
         context,
         "Не удалось найти сохранённую группу. Выберите её заново.\n\n" + SEARCH_PROMPT,
     )
+
+
+@router.state_timeout()
+async def state_timeout_handler(event, context):
+    if context["USERS"].get(str(event.user_id)) is None:
+        await begin_group_selection(
+            event,
+            context,
+            "Время ожидания истекло. Выберите группу заново.\n\n" + SEARCH_PROMPT,
+        )
+        return
+
+    await send_message(
+        event.chat_id,
+        "push_button",
+        text="Время ожидания истекло. Выберите действие заново.",
+    )
+
+
+@router.command("restart")
+async def restart_handler(event, context):
+    context["USER_STATE"].pop(event.user_id, None)
+    context["USER_SELECTION"].pop(event.user_id, None)
+    context.setdefault("USER_STATE_UPDATED", {}).pop(event.user_id, None)
+
+    if context["USERS"].get(str(event.user_id)) is None:
+        await begin_group_selection(event, context)
+        return
+
+    await send_message(event.chat_id, "/start")
     
 @router.command("re_group")
 async def re_group_handler(event, context):

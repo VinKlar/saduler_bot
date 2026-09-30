@@ -1,3 +1,9 @@
+import time
+
+
+STATE_TIMEOUT_SECONDS = 120
+
+
 class Event:
     def __init__(self, update: dict):
         self.update = update
@@ -45,6 +51,7 @@ class Router:
         self.state_handlers = []
         self.start_handlers = []
         self.missing_user_handlers = []
+        self.state_timeout_handlers = []
 
     def message(self, text=None):
         def decorator(func):
@@ -100,6 +107,23 @@ class Router:
 
         return decorator
 
+    def state_timeout(self):
+        def decorator(func):
+            self.state_timeout_handlers.append(func)
+            return func
+
+        return decorator
+
+    @staticmethod
+    async def _run_handler(func, event, context):
+        await func(event, context)
+
+        state_updated = context.setdefault("USER_STATE_UPDATED", {})
+        if context["USER_STATE"].get(event.user_id):
+            state_updated[event.user_id] = time.monotonic()
+        else:
+            state_updated.pop(event.user_id, None)
+
     async def dispatch(self, update: dict, context: dict):
         event = Event(update)
 
@@ -107,6 +131,24 @@ class Router:
             return
 
         user_state = context["USER_STATE"].get(event.user_id)
+        state_updated = context.setdefault("USER_STATE_UPDATED", {})
+
+        if event.type == "message" and event.text == "/restart":
+            for handler in self.command_handlers:
+                if handler["command"] == "restart":
+                    await self._run_handler(handler["func"], event, context)
+                    return
+
+        if user_state:
+            updated_at = state_updated.setdefault(event.user_id, time.monotonic())
+            if time.monotonic() - updated_at >= STATE_TIMEOUT_SECONDS:
+                context["USER_STATE"].pop(event.user_id, None)
+                context["USER_SELECTION"].pop(event.user_id, None)
+                state_updated.pop(event.user_id, None)
+
+                for handler in self.state_timeout_handlers:
+                    await self._run_handler(handler, event, context)
+                return
 
         is_start_message = event.type == "message" and event.text == "/start"
         user_exists = context["USERS"].get(str(event.user_id)) is not None
@@ -118,24 +160,24 @@ class Router:
             and not is_start_message
         ):
             for handler in self.missing_user_handlers:
-                await handler(event, context)
+                await self._run_handler(handler, event, context)
             return
 
         if event.type == "callback" and event.payload == "cancel":
             for handler in self.callback_handlers:
                 if handler["payload"] == "cancel":
-                    await handler["func"](event, context)
+                    await self._run_handler(handler["func"], event, context)
                     return
 
         if user_state:
             for handler in self.state_handlers:
                 if handler["state"] == user_state:
-                    await handler["func"](event, context)
+                    await self._run_handler(handler["func"], event, context)
                     return
 
         if event.type == "bot_started":
             for handler in self.start_handlers:
-                await handler(event, context)
+                await self._run_handler(handler, event, context)
             return
 
         if event.type == "message" and event.text.startswith("/"):
@@ -143,17 +185,17 @@ class Router:
 
             for handler in self.command_handlers:
                 if handler["command"] == command:
-                    await handler["func"](event, context)
+                    await self._run_handler(handler["func"], event, context)
                     return
 
         if event.type == "message":
             for handler in self.message_handlers:
                 if handler["text"] is None or handler["text"] == event.text:
-                    await handler["func"](event, context)
+                    await self._run_handler(handler["func"], event, context)
                     return
 
         if event.type == "callback":
             for handler in self.callback_handlers:
                 if handler["payload"] is None or handler["payload"] == event.payload:
-                    await handler["func"](event, context)
+                    await self._run_handler(handler["func"], event, context)
                     return
