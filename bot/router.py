@@ -34,6 +34,7 @@ class Event:
             user = self.update.get("user", {})
             self.user_id = user.get("user_id", self.update.get("user_id"))
             self.chat_id = self.update.get("chat_id")
+            self.payload = self.update.get("payload")
 
 
 class Router:

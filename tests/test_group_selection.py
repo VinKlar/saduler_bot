@@ -24,7 +24,7 @@ def callback_update(payload, user_id=1, chat_id=10):
     }
 
 
-def bot_started_update(user_id=1, chat_id=10):
+def bot_started_update(user_id=1, chat_id=10, payload=None):
     return {
         "update_type": "bot_started",
         "timestamp": 0,
@@ -33,7 +33,7 @@ def bot_started_update(user_id=1, chat_id=10):
             "user_id": user_id,
             "name": "Новый пользователь",
         },
-        "payload": None,
+        "payload": payload,
     }
 
 
@@ -89,6 +89,32 @@ class RegistrationFlowTests(unittest.IsolatedAsyncioTestCase):
             "Не удалось найти сохранённую группу",
             sender.await_args.kwargs["text"],
         )
+
+    async def test_group_deep_link_selects_group(self):
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(
+                bot_started_update(payload="group_8101"),
+                self.context,
+            )
+
+        self.assertEqual(self.context["USERS"]["1"]["group"], "8101")
+        self.assertNotIn(1, self.context["USER_STATE"])
+        self.assertIsNotNone(self.saved_users)
+        self.assertIn("Группа сохранена: 8101", sender.await_args.kwargs["text"])
+
+    async def test_unknown_group_deep_link_opens_manual_selection(self):
+        sender = AsyncMock()
+
+        with patch("bot.handlers.send_message", new=sender):
+            await router.dispatch(
+                bot_started_update(payload="group_9999"),
+                self.context,
+            )
+
+        self.assertEqual(self.context["USER_STATE"][1], "WAIT_SEARCH")
+        self.assertIn("Группа 9999 не найдена", sender.await_args.kwargs["text"])
 
     async def test_user_can_enter_group_immediately(self):
         with patch("bot.handlers.send_message", new=AsyncMock()):

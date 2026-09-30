@@ -193,6 +193,21 @@ def format_lesson(item):
 
 @router.bot_started()
 async def start_handler(event, context):
+    payload = event.payload or ""
+    if payload.startswith("group_"):
+        group = payload.removeprefix("group_")
+        group_info = GROUP_CATALOG.find_group(group)
+        if group_info:
+            await save_group(event, context, group_info)
+            return
+
+        await begin_group_selection(
+            event,
+            context,
+            f"Группа {group} не найдена. Выберите группу вручную.\n\n{SEARCH_PROMPT}",
+        )
+        return
+
     user_key = str(event.user_id)
 
     if context["USERS"].get(user_key) is None:
